@@ -1,4 +1,4 @@
-package "supervisor"            # FIXME: work with custom debian package
+package "supervisor"
 
 service "supervisor" do
   reload_command "supervisorctl update"

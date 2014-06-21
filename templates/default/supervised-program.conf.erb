@@ -13,6 +13,9 @@ user = <%= @program.user %>
 directory = <%= @program.directory %>
 <% end -%>
 
+<% if not @program.redirect_stderr.nil? -%>
+redirect_stderr = <%= @program.redirect_stderr %>
+<% end -%>
 <% if not @program.stdout_logfile.nil? -%>
 stdout_logfile = <%= @program.stdout_logfile %>
 <% end -%>

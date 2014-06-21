@@ -8,6 +8,7 @@ attribute :startsecs, :kind_of => Integer, :default => nil
 attribute :user, :kind_of => String, :default => nil
 attribute :directory, :kind_of => String, :default => nil
 
+attribute :redirect_stderr, :kind_of => [FalseClass, TrueClass], :default => nil
 attribute :stdout_logfile, :kind_of => String, :default => nil
 attribute :stdout_logfile_maxbytes, :kind_of => String, :default => nil
 attribute :stderr_logfile, :kind_of => String, :default => nil

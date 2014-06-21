@@ -3,6 +3,9 @@ command = <%= @program.command %>
 <% if not @program.autostart.nil? -%>
 autostart = <%= @program.autostart %>
 <% end -%>
+<% if not @program.autorestart.nil? -%>
+autorestart = <%= @program.autorestart %>
+<% end -%>
 <% if not @program.startsecs.nil? -%>
 startsecs = <% @program.startsecs %>
 <% end -%>

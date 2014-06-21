@@ -12,7 +12,15 @@ None
 
 See recipes/example.rb
 
+= LINKS:
+
+* https://github.com/timurb/chef-supervisord
+
 = AUTHORS:
+
+Loosely based on cookbook (https://github.com/markbate/chef-supervisord) by:
 
 * Maciej Pasternacki
 * Dan Crosta
+* Timur Batyrshin
+

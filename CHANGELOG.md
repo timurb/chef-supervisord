@@ -3,6 +3,11 @@ supervisor CHANGELOG
 
 This file is used to list changes made in each version of the supervisor cookbook.
 
+0.1.2
+-----
+- If the supervisor is not running the `supervisor_program` now would fail when starting new service.
+  This probably could have some unwanted side-effects though.
+
 0.1.1
 -----
 - Enable and start supervisord service by default

@@ -3,6 +3,10 @@ supervisor CHANGELOG
 
 This file is used to list changes made in each version of the supervisor cookbook.
 
+0.1.4
+-----
+- bugfix of chef-client crashing when using both :supervise and :start at the same time
+
 0.1.3
 -----
 - updated start command for managed processes

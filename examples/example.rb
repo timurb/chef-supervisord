@@ -2,7 +2,7 @@ include_recipe "supervisord"
 
 cat = supervisord_program "cat" do
   command "cat"
-  action [:supervise, :start]
+  action [:create, :start]
 end
 
 ruby_block "start cat" do

@@ -1,4 +1,6 @@
-actions :supervise, :start, :stop, :restart, :remove
+actions :create, :start, :stop, :restart, :remove
+
+default_action :create
 
 attribute :name, :kind_of => String, :name_attribute => true
 attribute :command, :kind_of => String, :required => true

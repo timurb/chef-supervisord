@@ -4,7 +4,7 @@ def whyrun_supported?
   true
 end
 
-action :supervise do
+action :create do
   supervisord_update
 
   template "/etc/supervisor/conf.d/#{new_resource.name}.conf" do

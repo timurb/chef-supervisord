@@ -3,6 +3,11 @@ supervisor CHANGELOG
 
 This file is used to list changes made in each version of the supervisor cookbook.
 
+0.2.0
+-----
+- :supervise -> :create
+- support for supervisor groups
+
 0.1.5
 -----
 - enabled support for why-run

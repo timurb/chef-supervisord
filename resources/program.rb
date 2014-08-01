@@ -7,17 +7,18 @@ attribute :command, :kind_of => String, :required => true
 
 attribute :autostart, :kind_of => [FalseClass, TrueClass], :default => false
 attribute :autorestart, :kind_of => [FalseClass, TrueClass], :default => false
-attribute :startsecs, :kind_of => Integer, :default => nil
-attribute :user, :kind_of => String, :default => nil
-attribute :directory, :kind_of => String, :default => nil
+attribute :startretries, :kind_of => Integer
+attribute :startsecs, :kind_of => Integer
+attribute :user, :kind_of => String
+attribute :directory, :kind_of => String
 
-attribute :redirect_stderr, :kind_of => [FalseClass, TrueClass, NilClass], :default => nil
-attribute :stdout_logfile, :kind_of => String, :default => nil
-attribute :stdout_logfile_maxbytes, :kind_of => String, :default => nil
-attribute :stderr_logfile, :kind_of => String, :default => nil
-attribute :stderr_logfile_maxbytes, :kind_of => String, :default => nil
+attribute :redirect_stderr, :kind_of => [FalseClass, TrueClass, NilClass]
+attribute :stdout_logfile, :kind_of => String
+attribute :stdout_logfile_maxbytes, :kind_of => String
+attribute :stderr_logfile, :kind_of => String
+attribute :stderr_logfile_maxbytes, :kind_of => String
 
-attribute :stopsignal, :equal_to => ["TERM", "HUP", "INT", "QUIT", "KILL", "USR1", "USR2"], :default => nil
+attribute :stopsignal, :equal_to => ["TERM", "HUP", "INT", "QUIT", "KILL", "USR1", "USR2"]
 
 attribute :environment, :kind_of => Hash, :default => []
 

@@ -7,10 +7,10 @@ autostart = <%= @program.autostart %>
 autorestart = <%= @program.autorestart %>
 <% end -%>
 <% if not @program.startsecs.nil? -%>
-startsecs = <% @program.startsecs %>
+startsecs = <%= @program.startsecs %>
 <% end -%>
 <% if not @program.startretries.nil? -%>
-startretries = <% @program.startretries %>
+startretries = <%= @program.startretries %>
 <% end -%>
 <% if not @program.user.nil? -%>
 user = <%= @program.user %>

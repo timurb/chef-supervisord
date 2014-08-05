@@ -3,7 +3,12 @@ supervisor CHANGELOG
 
 This file is used to list changes made in each version of the supervisor cookbook.
 
+0.2.3
+-----
+- simplify service management
+
 0.2.2
+-----
 - startsecs parameter worked incorrectly
 
 0.2.1

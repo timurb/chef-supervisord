@@ -28,12 +28,7 @@ end
 
 [:start, :stop, :restart].each do |a|
   action a do
-    ruby_block "reload client config" do
-      block do
-        new_resource.service.run_action(a)
-      end
-      not_if "supervisorctl status #{new_resource.name} | egrep -q '(STARTING|RUNNING)'"
-    end
+    new_resource.service.run_action(a)
   end
 end
 

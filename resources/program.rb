@@ -11,6 +11,7 @@ attribute :startretries, :kind_of => Integer
 attribute :startsecs, :kind_of => Integer
 attribute :user, :kind_of => String
 attribute :directory, :kind_of => String
+attribute :priority, :kind_of => Integer
 
 attribute :redirect_stderr, :kind_of => [FalseClass, TrueClass, NilClass]
 attribute :stdout_logfile, :kind_of => String

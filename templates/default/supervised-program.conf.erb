@@ -18,6 +18,9 @@ user = <%= @program.user %>
 <% if not @program.directory.nil? -%>
 directory = <%= @program.directory %>
 <% end -%>
+<% if not @program.priority.nil? -%>
+priority = <%= @program.priority %>
+<% end -%>
 
 <% if not @program.redirect_stderr.nil? -%>
 redirect_stderr = <%= @program.redirect_stderr %>

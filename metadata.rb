@@ -1,3 +1,4 @@
+name             "supervisord"
 maintainer       "Maciej Pasternacki"
 maintainer_email "maciej@pasternacki.net"
 license          "WTFPL"

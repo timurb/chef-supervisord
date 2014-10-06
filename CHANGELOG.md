@@ -3,6 +3,10 @@ supervisor CHANGELOG
 
 This file is used to list changes made in each version of the supervisor cookbook.
 
+0.2.5
+-----
+- added "update" parameter
+
 0.2.4
 -----
 - added "priority" parameter

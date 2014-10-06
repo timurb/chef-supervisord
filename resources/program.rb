@@ -7,6 +7,7 @@ attribute :command, :kind_of => String, :required => true
 
 attribute :autostart, :kind_of => [FalseClass, TrueClass], :default => false
 attribute :autorestart, :kind_of => [FalseClass, TrueClass], :default => false
+attribute :update, :equal_to => [:immediate, :immediately, :delayed, :no_update], :default => :immediately
 attribute :startretries, :kind_of => Integer
 attribute :startsecs, :kind_of => Integer
 attribute :user, :kind_of => String

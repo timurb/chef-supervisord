@@ -17,7 +17,7 @@ action :create do
       :group => new_resource.name,
       :programs => new_resource.programs.join(",")
     )
-    notifies :run, 'execute[supervisorctl update]', :immediately
+    notifies :run, 'execute[supervisorctl update]', new_resource.update unless new_resource.update == :no_update
   end
 end
 
@@ -26,7 +26,7 @@ action :remove do
 
   file "/etc/supervisor/conf.d/group_#{new_resource.name}.conf" do
     action :delete
-    notifies :run, 'execute[supervisorctl update]', :immediately
+    notifies :run, 'execute[supervisorctl update]', new_resource.update unless new_resource.update == :no_update
   end
 end
 

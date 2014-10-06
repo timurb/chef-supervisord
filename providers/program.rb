@@ -14,7 +14,7 @@ action :create do
     group 'root'
     mode '0644'
     variables :program => new_resource
-    notifies :run, 'execute[supervisorctl update]', :immediately
+    notifies :run, 'execute[supervisorctl update]', new_resource.update unless new_resource.update == :no_update
   end
 
   s = service "supervisord_program_#{new_resource.name}" do
@@ -37,7 +37,7 @@ action :remove do
 
   file "/etc/supervisor/conf.d/#{new_resource.name}.conf" do
     action :delete
-    notifies :run, 'execute[supervisorctl update]', :immediately
+    notifies :run, 'execute[supervisorctl update]', new_resource.update unless new_resource.update == :no_update
   end
 end
 
